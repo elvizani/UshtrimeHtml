@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function tabela()
+{
+	var nr=document.getElementById("txt").value;
+	var tab=document.getElementById("tab");
+	for(var i=0;i<=nr;i++);
+{
+	var row=tab.insertRow(i);
+	for(var j=0;j<nr;j++)
+{
+	var cell=row.insertCell(j);
+	cell.insertHTML="rreshti "+i+" kolona"+j;
+}
+}
+}
+</script>
+</head>
+<body>
+Nr<input type="text" id="txt">
+<br>
+<input type="submit" value="llogarit" onclick="tabela()">
+<br>
+<table border="1" width="200px" height="100px" id="tab">
+</table>
+</body>
+</html>

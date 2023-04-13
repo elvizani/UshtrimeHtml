@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+<function dergo()
+{
+	var data=new Date();
+	var d=data.toTimeString().substr(0,0);
+	var text=document.getElementById("div1");
+	var p=document.createElement("p");
+	p.innerHTML=text+"  "+d;
+	div.appendChild(p);
+	p.style.borderLeft="thick solid #AAAA00";
+	p.style.paddingLeft="10px";
+}
+function therrit()
+{
+	dergo();
+}
+</script>
+</head>
+<body>
+<div id="div1">
+</div>
+sms<input type="text" id="txt1">
+<br>
+<input type="submit" value="send" onclick="therrit()">
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function kontrollo()
+{
+	var nr=document.getElementById("txt").value;
+	if (nr%2==0)
+	document.getElementById("div").innerHTML="numri "+nr+" esht cift";
+		else
+	document.getElementById("div").innerHTML="numri "+nr+" esht tek";
+}
+</script>
+</head>
+<body>
+Nr<input type="text" id="txt">
+<br>
+<input type="submit" value="kontrollo" onclick="kontrollo()">
+<br>
+<div id="div"></div>
+</body>
+</htmt>
